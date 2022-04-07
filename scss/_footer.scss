@@ -1,0 +1,122 @@
+.footer{
+    width: 100%;
+    background-color: $bg-black;
+
+    &__items{
+        display: grid;
+        grid-template-columns: 484px 484px 1fr 1fr;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    &__logo{
+        width: 150px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    &__socials{
+        display: flex;
+        align-items: center;
+    }
+
+    &__social{
+        margin-right: 8px;
+        &__image{
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1px solid white;
+            padding: 4px;
+        }
+    }
+
+    &__title{
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 28px;
+    }
+
+    &__link{
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2;
+        color: white;
+        &__icon{
+            width: 18px;
+            height: auto;
+            margin-right: 10px;
+        }
+    }
+
+    &__list{
+        list-style: none;
+        padding-left: 0;
+
+        &__link{
+            font-size: 1.6rem;
+            line-height: 2;
+            font-weight: 400;
+            color: white;
+        }
+    }
+
+    &__informations{
+        list-style: none;
+        padding: 0;
+        padding-right: 20px;
+    }
+
+    &__name{
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: white;
+    }
+
+    &__subfooter{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: white;
+        padding: 16px 0;
+        border-top: solid 1px #4c4b4c;
+    }
+}
+
+@media screen and (max-width: 1630px) {
+    .footer{
+        &__items{
+            grid-template-columns: repeat(4,1fr);
+        }
+
+        &__item:nth-child(3){
+            padding-left: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer{
+        &__items{
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 50px;
+        }
+
+        &__item:first-child{
+            text-align: center;
+        }
+
+        &__item:nth-child(3){
+            padding-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer{
+        &__items{
+            grid-template-columns: 1fr;
+            grid-gap: 50px;
+        }
+    }
+}

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .highlight::after{
+            background-image: url("./images/news-bg.svg");
+        }
+        .news::after{
+            background-image: url("./images/news-bg.svg");
+        }
+        .developmental{
+            background-image: url("./images/developmental-bg.jpg");
+        }
+        .partner{
+            background-image: url("./images/banner.jpg");
+        }
+    </style>
+    <title>Trang chủ - Central Capital</title>
+</head>
+<body>
+    <header>
+        <div class="topbar__mobile">
+            <div class="container topbar__mobile__wrapper">
+                <div class="topbar__mobile__left">
+                    <img src="./images/logo.png" alt="" srcset="">
+                </div>
+                <div class="topbar__mobile__right">
+                    <div class="topbar__mobile__language">
+                        <a href="#">VI</a>
+                        <a href="#">EN</a>
+                    </div>
+                    <div class="topbar__mobile__menu">
+                        MENU
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <div class="topbar">
+            <div class="container topbar__wrapper">
+                <div class="topbar__left">
+                    <div class="topbar__logo">
+                        <img src="./images/logo.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="topbar__right">
+                    <div class="topbar__contact">
+                        <a href="#" class="topbar__call"><span>
+                            <i class="fas fa-phone"></i>0909 123 456
+                        </span></a>
+                        <a href="#" class="topbar__email">
+                            <i class="fas fa-envelope"></i>info@newworldcapita
+                        </a>
+                        <div class="topbar__subcontact">
+                            <div class="topbar__subcontact__social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <div class="topbar__subcontact__language">
+                                <a href="#">VI</a>
+                                <a href="#">EN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="topbar__navigation">
+                        <li class="topbar__navigation__item">
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li class="topbar__navigation__item">
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li class="topbar__navigation__item">
+                            <a href="#">Lĩnh vực</a>
+                        </li>
+                        <li class="topbar__navigation__item">
+                            <a href="#">Dự án</a>
+                        </li>
+                        <li class="topbar__navigation__item">
+                            <a href="#">Tin tức</a>
+                        </li>
+                        <li class="topbar__navigation__item">
+                            <a href="#">Tuyển dụng</a>
+                        </li>
+                        <li class="topbar__navigation__item">
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner" style="background-image: url('./images/banner.jpg');">
+            <div class="banner__slide">
+                <div class="container banner__wrapper">
+                    <div class="banner__box">
+                        <div class="banner__content">
+                            <div class="banner__title">
+                                <img class="banner__title__image" src="./images/ic_title.svg" alt="">
+                                <h3><strong>Dự án tiêu biểu</strong></h3>
+                            </div>
+                            <h2 class="banner__brand"><strong>The Pearl Hoi An Hotels & Resort</strong></h2>
+                            <h5 class="banner__describer">The Pearl Hoi An khu phức hợp nghỉ là dưỡng bao gồm Căn hộ, Biệt thự hướng biển, Khách sạn đã được hoàn thiện và chính thức đi vào hoạt động từ tháng 02/2019.</h5>
+                            <a class="banner__button" href="#"><img src="./images/bannerbutton.png" alt="" srcset=""> Xem video dự án</a>
+                        </div>
+                        <!-- Then -->
+                        <!-- <div class="banner__page"> 
+                            <div class="banner__page__item">
+                                <h5>01</h5>
+                            </div>
+                            <div class="banner__page__item">
+                                <h5>02</h5>
+                            </div>
+                            <div class="banner__page__item">
+                                <h5>03</h5>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="banner__subbox container">
+                    <div class="banner__subbox__left"><img class="banner__subbox__left__image" src="./images/upbutton.svg" alt=""></div>
+                    <div class="banner__subbox__right">
+                        <a class="banner__subbox__right__link" href="#">Tải hồ sơ năng lực <img class="banner__subbox__right__image" src="./images/cloud.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="introduce">
+            <div class="container introduce__wrapper">
+                <div class="introduce__left">
+                    <div class="introduce__header">
+                        <div class="introduce__logo">
+                            <img class="introduce__logo__image" src="./images/logo.png" alt="">
+                        </div>
+                        <div class="introduce__title__right__left">
+                            <h3 class="introduce__title__right__text">Về chúng tôi
+                                <img class="introduce__title__image" src="./images/about-title.svg" alt="">
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="introduce__describer">
+                        <p class="introduce__paragraph">
+                            Central Capital đã và đang xây dựng và phát triển những sản phẩm phù hợp với nhu cầu của người Việt Nam, đồng thời vẫn giữ vững tiêu chuẩn quốc tế và chất lượng xây dựng. Cùng với kinh nghiệm, khả năng quản lý của các nhà sáng lập và đội ngũ quản lý chất lượng trong lĩnh vực đầu tư Bất Động Sản
+                        </p>
+                        <p class="introduce__paragraph">
+                            Các dự án của Central Capital trải dài trên khắp Việt Nam, từ căn hộ, nhà phố đến khách sạn, khu đô thị và khu nghỉ dưỡng. Hoạt động kinh doanh và tư vấn của chúng tôi đa dạng từ bất động sản, quản lý tài sản, quản trị khách sạn-văn phòng, sản xuất, thương mại và dịch vụ cho đến quản lý và xây dựng dự án. 
+                        </p>
+                    </div>
+                    <a href="introduce__button">
+                        <img class="introduce__button__image" src="./images/about-button.svg" alt="">
+                        Xem thêm</a>
+                </div>
+                <div class="introduce__right">
+                    <div class="introduce__right__box">
+                        <img class="introduce__right__image" src="./images/about.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="developmental">
+            <div class="container developmental__wrapper">
+                 <div class="developmental__header">
+                     <h3 class="developmental__title">
+                         <img class="developmental__title__image" src="./images/developmental-title.svg" alt ="" srcset=""> Chặng đường phát triển</h3>
+                     <h4 class="developmental__years">Năm 2021</h4>
+                 </div>
+                 <div class="developmental__main">
+                     <div class="developmental__item">
+                         <div class="developmental__item__left">
+                             <img class="developmental__item__image" src="./images/phattrien1.svg" alt="">
+                         </div>
+                         <div class="developmental__item__right">
+                             <h5 class="developmental__item__right__number">50 +</h5>
+                             <p class="developmental__item__right__text">Dự án</p>
+                         </div>
+                     </div>
+                     <div class="developmental__item">
+                         <div class="developmental__item__left">
+                             <img class="developmental__item__image" src="./images/phattrien2.svg" alt="">
+                         </div>
+                         <div class="developmental__item__right">
+                             <h5 class="developmental__item__right__number">30.000 +</h5>
+                             <p class="developmental__item__right__text">Căn</p>
+                         </div>
+                     </div>
+                     <div class="developmental__item">
+                         <div class="developmental__item__left">
+                             <img class="developmental__item__image" src="./images/phattrien3.svg" alt="">
+                         </div>
+                         <div class="developmental__item__right">
+                             <h5 class="developmental__item__right__number">10</h5>
+                             <p class="developmental__item__right__text">Tỉnh thành</p>
+                         </div>
+                     </div>
+                     <div class="developmental__item">
+                         <div class="developmental__item__left">
+                             <img class="developmental__item__image" src="./images/phattrien4.svg" alt="">
+                         </div>
+                         <div class="developmental__item__right">
+                             <h5 class="developmental__item__right__number">5.000.000 m2</h5>
+                             <p class="developmental__item__right__text">Tổng diện tích đất</p>
+                         </div>
+                     </div>
+                     <div class="developmental__item">
+                         <div class="developmental__item__left">
+                             <img class="developmental__item__image" src="./images/phattrien5.svg" alt="">
+                         </div>
+                         <div class="developmental__item__right">
+                             <h5 class="developmental__item__right__number">700 +</h5>
+                             <p class="developmental__item__right__text">Dự án</p>
+                         </div>
+                     </div>
+                     <div class="developmental__item">
+                         <div class="developmental__item__left">
+                             <img class="developmental__item__image" src="./images/phattrien6.svg" alt="">
+                         </div>
+                         <div class="developmental__item__right">
+                             <h5 class="developmental__item__right__number">4.492 tỷ</h5>
+                             <p class="developmental__item__right__text">Tổng vốn đầu tư</p>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <section class="field" style="background-image: url('./images/field-bg.jpg');">
+            <div class="container field__wrapper"> 
+                <div class="field__left">
+                    <h3 class="field__title">
+                        <img class="field__title__image" src="./images/field-title.svg" alt="">
+                        Lĩnh vực hoạt động
+                    </h3>
+                    <div class="field__list">
+                        <a class="field__list__item">    
+                           Phát triển bất động sản
+                        </a>
+                        <a class="field__list__item">    
+                           Quản lý tài sản
+                        </a>
+                        <a class="field__list__item">    
+                           Quản trị khách sạn - Văn phòng
+                        </a>
+                        <a class="field__list__item">    
+                           Thương mại - Dịch vụ
+                        </a>
+                        <a class="field__list__item">    
+                           Sản xuất
+                        </a>
+                        <a class="field__list__item">    
+                           Xây dựng
+                        </a>
+                        
+                        <div class="field__button">
+                            <span><img class="field__button__image" src="./images/fieldbuttonleft.svg" alt="" srcset=""></span>
+                            <span><img class="field__button__image" src="./images/fieldbuttonright.svg" alt="" srcset=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field__right">
+                    <div class="field__box">
+                        <img class="field__image" src="./images/field.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="highlight">
+            <div class="container highlight__wrapper">
+                <div class="highlight__header"> 
+                    <h3 class="highlight__title"><img class="highlight__title__image" src="./images/developmental-title.svg" alt="" srcset=""> Dự án nổi bật</h3>
+                    <a class="highlight__button">
+                        <img class="highlight__button__image" src="./images/about-button.svg" alt=""> 
+                        Xem thêm dự án
+                    </a>
+                </div>
+                <div class="highlight__box">
+                    <a href="#" class="highlight__item">
+                        <div class="highlight__item__box">
+                            <img class="highlight__item__image" src="./images/mainHighlight.jpg" alt="">
+                            <div class="highlight__item__subbox">
+                                <h4 class="highlight__item__order">01</h4>
+                                <h4 class="highlight__item__name">Cam ranh bay</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="highlight__item">
+                        <div class="highlight__item__box">
+                            <img class="highlight__item__image" src="./images/field.png" alt="">
+                            <div class="highlight__item__subbox">
+                                <h4 class="highlight__item__order">02</h4>
+                                <h4 class="highlight__item__name">Takara Residence</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="highlight__item">
+                        <div class="highlight__item__box">
+                            <img class="highlight__item__image" src="./images/banner.jpg" alt="">
+                            <div class="highlight__item__subbox">
+                                <h4 class="highlight__item__order">03</h4>
+                                <h4 class="highlight__item__name">The Pearl Hoi An</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news__header">
+                    <h3 class="news__title">
+                        <img class="news__title__image" src="./images/developmental-title.svg" alt="" srcset=""> 
+                        Tin tức
+                    </h3>
+                    <a class="news__button">
+                        <img class="news__button__image" src="./images/about-button.svg" alt=""> 
+                        Xem thêm tin tức
+                    </a>
+                </div>
+                <div class="news__main">
+                    <ul class="news__list">
+                        <li class="news__item">
+                            <a class="news__item__box news__main__box" href="#">
+                                <div class="news__box">
+                                    <img class="news__image" src="./images/news-main.jpg" alt="">
+                                </div>
+                                <div class="news__item__box">
+                                    <div class="news__item__subbox">
+                                        <h5 class="news__item__date">19</h5>
+                                        <p class="news__item__month">06 - 2021</p>
+                                    </div>
+                                    <h4 class="news__item__title">Hạ tầng đồng bộ thúc đẩy bất động sản phía Nam Hà Nội</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- column 2 -->
+                        <li class="news__item">
+                            <a class="news__item__box" href="#">
+                                <div class="news__item__subbox">
+                                    <h5 class="news__item__date">18</h5>
+                                    <p class="news__item__month">06 - 2021</p>
+                                </div>
+                                <h4 class="news__item__title">Lợi thế giúp Quảng Bình hút nhà đầu tư địa ốc</h4>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a class="news__item__box" href="#">
+                                <div class="news__item__subbox">
+                                    <h5 class="news__item__date">17</h5>
+                                    <p class="news__item__month">06 - 2021</p>
+                                </div>
+                                <h4 class="news__item__title">Tìm lời giải bài toán an cư cho người nhập cư Bình Dương</h4>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a class="news__item__box" href="#">
+                                <div class="news__item__subbox">
+                                    <h5 class="news__item__date">15</h5>
+                                    <p class="news__item__month">06 - 2021</p>
+                                </div>
+                                <h4 class="news__item__title">Hội An hưởng lợi từ đà phát triển bất động sàn nghỉ dưỡng Đà Nẵng</h4>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a class="news__item__box" href="#">
+                                <div class="news__item__subbox">
+                                    <h5 class="news__item__date">14</h5>
+                                    <p class="news__item__month">06 - 2021</p>
+                                </div>
+                                <h4 class="news__item__title">Xu hướng cá nhân hóa tiện ích second home</h4>
+                            </a>
+                        </li>
+                        
+                        <li class="news__item">
+                            <a class="news__item__box" href="#">
+                                <div class="news__item__subbox">
+                                    <h5 class="news__item__date">10</h5>
+                                    <p class="news__item__month">06 - 2021</p>
+                                </div>
+                                <h4 class="news__item__title">Covid-19 đóng vai trò chất xúc tác trên thị trường</h4>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a class="news__item__box" href="#">
+                                <div class="news__item__subbox">
+                                    <h5 class="news__item__date">08</h5>
+                                    <p class="news__item__month">06 - 2021</p>
+                                </div>
+                                <h4 class="news__item__title">Đầu tư trung dữ liệu tăng nhiệt</h4>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a class="news__item__box" href="#">
+                                <div class="news__item__subbox">
+                                    <h5 class="news__item__date">05</h5>
+                                    <p class="news__item__month">06 - 2021</p>
+                                </div>
+                                <h4 class="news__item__title">Hạ tầng tăng sức bật cho bất động sản cao cấp Lào Cai</h4>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a class="news__item__box" href="#">
+                                <div class="news__item__subbox">
+                                    <h5 class="news__item__date">04</h5>
+                                    <p class="news__item__month">06 - 2021</p>
+                                </div>
+                                <h4 class="news__item__title">Căn hộ vùng ven TP HCM qua giai đoạn cao điểm</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="partner">
+            <div class="partner__overlay"></div>
+            <div class="container">
+                <div class="partner__header">
+                    <h3 class="partner__title">
+                        <img class="partner__title__image" src="./images/field-title.svg" alt="" srcset=""> 
+                        Đối tác
+                    </h3>
+                    <div class="partner__buttons">
+                        <a class="partner__button">
+                            Đối tác chiến lược
+                        </a>
+                        <a class="partner__button" href="#">
+                            Đối tác chuyên môn
+                        </a>
+                        <a class="partner__button" href="#">
+                            Đối tác ngân hàng
+                        </a>
+                    </div>
+                </div>
+                <div class="partner__list">
+                    <div class="partner__button__left">
+                        <img class="partner__button__image" src="./images/fieldbuttonleft.svg" alt="" srcset="">
+                    </div>
+                    <ul class="partner__items">
+                        <li class="partner__item">
+                            <a class="partner__link" href="#">
+                                <img class="partner__link__image" src="./images/partner1.png" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li class="partner__item">
+                            <a class="partner__link" href="#">
+                                <img class="partner__link__image" src="./images/partner2.jpg" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li class="partner__item">
+                            <a class="partner__link" href="#">
+                                <img class="partner__link__image" src="./images/partner3.jpg" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li class="partner__item">
+                            <a class="partner__link" href="#">
+                                <img class="partner__link__image" src="./images/partner4.jpg" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li class="partner__item">
+                            <a class="partner__link" href="#">
+                                <img class="partner__link__image" src="./images/partner5.png" alt="" srcset="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="partner__button__right">
+                        <img class="partner__button__image" src="./images/fieldbuttonright.svg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <img class="footer__logo" src="./images/logo-trang.png" alt="" srcset="">
+                    <div class="footer__socials">
+                        <div class="footer__social">
+                            <img class="footer__social__image" src="./images/ic_facebook.svg" alt="" srcset="">
+                        </div>
+                        <div class="footer__social">
+                            <img class="footer__social__image" src="./images/ic-youtube.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Lĩnh vực hoạt động</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Phát triển bất động sản
+                            </a>    
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Quản lý tài sản
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Quản trị Khách sạn - Văn phòng
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Thương mại - Dịch vụ
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Sản xuất
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Xây dựng
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Danh mục</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Trang chủ
+                            </a>    
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Lĩnh vực
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Dự án
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Tuyển dụng
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a class="footer__list__link" href="#">
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Thông tin liên hệ</h4>
+                    <h5 class="footer__name">Central Capital - Building trust</h5>
+                    <ul class="footer__informations">
+                        <li class="footer__information">
+                            <a class="footer__link" href="#">
+                                <img class="footer__link__icon" src="./images/ic_location.svg" alt="" srcset="">
+                                20 -22- 24 Đông Du, phường Bến Nghé, quận 1, Tp.HCM
+                            </a>
+                        </li>
+                        <li class="footer__information">
+                            <a class="footer__link" href="#">
+                                <img class="footer__link__icon" src="./images/ic_call.svg" alt="" srcset="">
+                                028 124 567
+                            </a>
+                        </li>
+                        <li class="footer__information">
+                            <a class="footer__link" href="#">
+                                <img class="footer__link__icon" src="./images/ic_letter.svg" alt="">
+                                info@centralcapital.com
+                            </a>
+                        </li>
+                        <li class="footer__information">
+                            <a class="footer__link" href="#">
+                                <img class="footer__link__icon" src="./images/ic_earth.svg" alt="">
+                                newworldcapital.vn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__subfooter">
+            <div class="container">
+                Copyright &copy; 2021 Central Capital. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+$bg-blue-dark : #0e3252;
+$text-red : #d51f37;
+$bg-red : #d41f36;
+$bg-black : #393939;
+$text-black : #393939;
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: Montserrat,serif;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    transition: 0.5s;
+
+    &:hover{
+        color: $text-red;
+    }
+}  
+
+.container{
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1620px) {
+    .container{
+        max-width: 1620px;
+    }
+}
+
+// @media screen and (min-width: 768px){
+//    .container {
+//        max-width: 880px;
+//    }
+// }

@@ -1,0 +1,209 @@
+.field{
+    width: 100%;
+    display: flex;
+    background-image: url("/assets/images/field-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__wrapper{
+        display: flex;
+        padding-top: 77px;
+        padding-bottom: 72px;
+    }
+
+    &__left{
+        flex: 1;
+    }
+
+    &__right{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        padding-right: 188px;
+        flex: 1;
+    }
+
+    &__title{
+        font-size: 3.2rem;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 54px;
+        font-size: 3.2rem;
+        font-weight: 900;
+        color: white;
+
+        &__image{
+            width: 20px;
+            height: auto;
+        }
+    }
+
+    &__list{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding-left: 162px;
+        
+        &__item{
+            display: inline;
+            position: relative;
+            font-size: 1.8rem;
+            line-height: 2.1;
+            font-weight: 500;
+            color: white;
+            transition: 0.5s;
+            padding-left: 56px;
+            width: max-content;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border: 1px solid white;
+                background-color: $text-red;
+                border-radius: 50%;
+                left: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+    
+            &:hover{
+                border-radius: 20px;
+                background-color: white;
+                padding: 16px 104px 18px 56px;
+                color: $text-red;
+                font-weight: 700;
+                &::before{
+                    border-color: $text-red;
+                }
+            }
+        }
+    }
+
+    &__image{
+        width: 770px;
+        height: 480px;
+    }
+
+    &__box{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 92px;
+            height: 1px;
+            border-top: 1px solid white;
+            bottom: -22px;
+            right: -22px;
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 90px;
+            border-left: 1px solid white;
+            right: -22px;
+            bottom: -22px
+        }
+    }
+
+    &__button{
+        position: absolute;
+        bottom: -133px;
+        &__image{
+            width: 26px;
+            height: 26px;
+            &:first-child{
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .field{
+        &__right{
+            padding-right: 0;
+        }
+
+        &__image{
+            width: 100%;
+        }
+
+        &__button{
+            bottom: -50%;
+        }
+    }
+}
+
+@media screen and (max-width: 1630px) {
+    .field{
+
+        &__title{
+            margin-bottom: 20px;
+        }
+
+        &__list{
+            padding-left: 85px;
+        }
+
+        &__button{
+            bottom: -50px;
+        }
+
+        &__image{
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .field{
+        &__wrapper{
+            flex-direction: column;
+            gap: 50px;
+        }   
+
+        &__list{
+            display: grid;
+            padding-left: 0;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__button{
+            left: 50%;
+            bottom: -35px;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .field{
+        &__list{
+            grid-template-columns: 1fr;
+        }
+
+        &__title{
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .field{
+        &__box{
+            &::before{
+                display: none;
+            }
+
+            &::after{
+                display: none;
+            }
+        }
+    }
+}
